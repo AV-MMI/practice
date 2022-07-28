@@ -8,7 +8,9 @@
 </head>
 <body>
 	<h1>Table Practice</h1>
-	<h2>Dogs Table - table, tr, th, td</h2>
+	<h2>HTML Table Basics</h2>
+	<hr>
+	<h3>Dogs Table - table, tr, th, td</h3>
 	<table>
 
 	  <tr>
@@ -48,7 +50,7 @@
 	  </tr>
 	</table>
 
-	<h2>Animals table - colspan, rowspan</h2>
+	<h3>Animals table - colspan, rowspan</h3>
 	<table>
 
 		<tr>
@@ -76,7 +78,7 @@
 		</tr>
 	</table>
 
-	<h2>Solar System - colspan, rowspan</h2>
+	<h3>Solar System - colspan, rowspan</h3>
 	<table>
 		<tr>
 			<th colspan="3">Solar system</th>
@@ -141,29 +143,26 @@
 		</tr>
 	</table>
 
-	<h2>School timetable - colgroup, col</h2>
+	<h3>School timetable - colgroup, col</h3>
 	<table>
-
 		<colgroup>
 			<col span="2">
-			<col style="background-color:#97DB9A">
-			<col style="width: 42px">
-			<col style="background-color: #97DB9A">
+			<col style="background-color:#97DB9A;">
+			<col style="width:42px">
+			<col style="background-color:#97DB9A;">
 			<col style="background-color:#DCC48E; border:4px solid #C1437A">
-			<col>
+			<col style="width:12px;" span="2">
 		</colgroup>
-
 		<tr>
 			<td></td>
-			<th>Mon</th>
-			<th>Tues</th>
-			<th>Wed</th>
-			<th>Thurs</th>
-			<th>Fri</th>
-			<th>Sat</th>
-			<th>Sun</th>
+			<th id="Mon">Mon</th>
+			<th id="Tues">Tues</th>
+			<th id="Wed">Wed</th>
+			<th id="Thurs">Thurs</th>
+			<th id="Fri">Fri</th>
+			<th id="Sat">Sat</th>
+			<th id="Sun">Sun</th>
 		</tr>
-
 		<tr>
 			<th>1st period</th>
 			<td>English</td>
@@ -174,7 +173,6 @@
 			<td></td>
 			<td></td>
 		</tr>
-
 		<tr>
 			<th>2nd period</th>
 			<td>English</td>
@@ -185,7 +183,6 @@
 			<td></td>
 			<td></td>
 		</tr>
-
 		<tr>
 			<th>3rd period</th>
 			<td></td>
@@ -196,7 +193,6 @@
 			<td></td>
 			<td></td>
 		</tr>
-
 		<tr>
 			<th>4th period</th>
 			<td></td>
@@ -209,6 +205,52 @@
 		</tr>
 	</table>
 
+	<h3>Week register - colgroup, col</h3>
+
+	<table>
+		<colgroup>
+			<col>
+			<col id="colMonday">
+			<col id="colTuesday">
+			<col id="colWednesday" style="background-color: orange; border:4px solid green">
+			<col id="colThursday">
+			<col id="colFriday">
+			<col id="colSaturday">
+			<col id="colSunday">
+		</colgroup>
+
+		<tr>
+			<td></td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+		<tr>
+			<th>Med</th>
+			<td></td>
+			<td></td>
+			<td>2 - 5m</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>CompSci</th>
+			<td></td>
+			<td></td>
+			<td>2h - 40m/20m - 1/1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<hr>
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
 //]]></script>

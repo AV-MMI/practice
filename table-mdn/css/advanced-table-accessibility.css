@@ -1,0 +1,14 @@
+th, td {
+	padding: 0.3em;
+}
+
+.num-al {
+	text-align: right;
+}
+.text-al {
+	text-align: left;
+}
+
+tbody tr:nth-child(odd){
+	background-color: #eee;
+}

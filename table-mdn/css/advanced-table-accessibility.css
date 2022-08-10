@@ -9,6 +9,33 @@ th, td {
 	text-align: left;
 }
 
-tbody tr:nth-child(odd){
+.thead-own {
+	color: white;
+	background-color: black;
+}
+
+.tbody-own tr:nth-child(odd){
 	background-color: #eee;
+}
+
+.tfoot-own {
+	color: white;
+	background-color: black;
+}
+
+.mdn {
+	background-color: #eee;
+	width: 700px;
+	padding: 5px;
+	font-family: sans-serif;
+}
+
+.mdn th {
+	background-color:#f7f7f7;
+
+}
+
+.mdn td {
+	text-align: center;
+	background-color: white;
 }

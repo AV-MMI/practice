@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advanced Table Project</title>
+	<link rel="stylesheet" href="../css/advanced-table-project.css">
+</head>
+<body>
+	<h1>Advanced Table Projects</h1>
+	<hr>
+	<h2>Scope attribute</h2>
+	<table>
+		<caption>South American capitals</caption>
+
+		<thead>
+			<tr>
+				<th scope="col">America</th>
+				<th scope="col">Country</th>
+				<th scope="col">City</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th scope="rowgroup" rowspan="13" id="scope">South America</th>
+				<th scope="row">Argentina</th>
+				<td>Buenos Aires</td>
+			</tr>
+			<tr>
+				<th scope="row" rowspan="2">Bolivia</th>
+				<td>La Paz</td>
+			</tr>
+			<tr>
+				<td>Sucre</td>
+			</tr>
+			<tr>
+				<th scope="row">Brazil</th>
+				<td>Brasilia</td>
+			</tr>
+			<tr>
+				<th scope="row">Chile</th>
+				<td>Santiago</td>
+			</tr>
+			<tr>
+				<th scope="row">Colombia</th>
+				<td>Bogotá</td>
+			</tr>
+			<tr>
+				<th scope="row">Ecuador</th>
+				<td>Quito</td>
+			</tr>
+			<tr>
+				<th scope="row">France (French Guiana)</th>
+				<td>Cayenne</td>
+			</tr>
+			<tr>
+				<th scope="row">Guyana</th>
+				<td>Georgetown</td>
+			</tr>
+			<tr>
+				<th scope="row">Paraguay</th>
+				<td>Asunción</td>
+			</tr>
+			<tr>
+				<th scope="row">Suriname</th>
+				<td>Paramaribo</td>
+			</tr>
+			<tr>
+				<th scope="row">Uruguay</th>
+				<td>Montevideo</td>
+			</tr>
+			<tr>
+				<th scope="row">Venezuela</th>
+				<td>Caracas</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<th scope="row" colspan="2">Total countries</th>
+				<td>13</td>
+			</tr>
+		</tfoot>
+
+	</table>
+
+	<hr>
+
+	<h2>id and headers attributes</h2>
+	<table>
+		<caption>South American capitals</caption>
+		<thead>
+			<tr>
+				<th id="america">America</th>
+				<th id="country">Country</th>
+				<th id="city">City</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th id="south-america" headers="america" rowspan="14">South America</th>
+				<th id="argentina" headers="south-america country">Argentina</th>
+				<td headers="south-america argentina city">Buenos Aires</td>
+			</tr>
+			<tr>
+				<th id="bolivia" headers="south-america country" rowspan="2">Bolivia</th>
+				<td headers="south-america bolivia city">La paz</td>
+			</tr>
+			<tr>
+				<td headers="south-america bolivia city">Sucre</td>
+			</tr>
+			<tr>
+				<th id="brazil" headers="south-america country">Brazil</th>
+				<td headers="south-america brazil city">Brasilia</td>
+			</tr>
+			<tr>
+				<th id="chile" headers="south-america country">Chile</th>
+				<td headers="south-america chile city">Santiago</td>
+			</tr>
+			<tr>
+				<th id="colombia" headers="south-america country">Colombia</th>
+				<td headers="south-america colombia city">Bogotá</td>
+			</tr>
+			<tr>
+				<th id="ecuador" headers="south-america country">Ecuador</th>
+				<td headers="south-america ecuador city">Quito</td>
+			</tr>
+			<tr>
+				<th id="french-guiana" headers="south-america country">France (French Guiana)</th>
+				<td headers="south-america french city-guiana">Cayenne</td>
+			</tr>
+			<tr>
+				<th id="guyana" headers="south-america country">Guyana</th>
+				<td headers="south-america guyana city">Georgetown</td>
+			</tr>
+			<tr>
+				<th id="paraguay" headers="south-america country">Paraguay</th>
+				<td headers="south-america paraguay city">Asunción</td>
+			</tr>
+			<tr>
+				<th id="suriname" headers="south-america country">Suriname</th>
+				<td headers="south-america suriname city">Paramaribo</td>
+			</tr>
+			<tr>
+				<th id="uruguay" headers="south-america country">Uruguay</th>
+				<td headers="south-america uruguay city">Montevideo</td>
+			</tr>
+			<tr>
+				<th id="venezuela" headers="south-america country">Venezuela</th>
+				<td headers="south-america venezuela city">Caracas</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th id="total" colspan="2">Total countries</th>
+				<td headers="total">13</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
